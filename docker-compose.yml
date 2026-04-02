@@ -1,6 +1,7 @@
 services:
   app:
-    build: .
+    image: roshaaaaan/mininotes
+    platform: linux/amd64
     container_name: mininotes_app
     ports:
       - "8000:8000"
