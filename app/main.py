@@ -50,6 +50,10 @@ def greet():
 def get_all_notes():
     return getData()
 
+@app.get("/random")
+def hello():
+    return {"welcome" : "helloworld"}
+
 
 @app.get("/notes/{id}", response_model=NoteResponse)
 def get_note_by_id(id: int):
